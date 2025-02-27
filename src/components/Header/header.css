@@ -1,0 +1,136 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  height: 50px;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-family: var(--font-secondary);
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-text-light);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+.header-toggle {
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.theme-switch {
+  width: 45px;
+  height: 25px;
+  background: var(--toggle-bg);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.slider {
+  width: 22px;
+  height: 22px;
+  background: var(--toggle-circle);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 5px;
+  transition: all 0.3s ease;
+}
+
+.slider i {
+  font-size: 14px;
+  color: var(--toggle-icon);
+}
+
+.dark-mode {
+  left: 23px;
+}
+
+:root {
+  --toggle-bg: #ffd700;
+  --toggle-circle: white;
+  --toggle-icon: #f88854;
+}
+
+[data-theme="dark"] {
+  --toggle-bg: #1e3a8a;
+  --toggle-circle: #fff;
+  --toggle-icon: #1e3a8a;
+}
+
+[data-theme="dark"] .theme-switch {
+  background: var(--toggle-bg);
+}
+
+[data-theme="dark"] .slider {
+  background: var(--toggle-circle);
+}
+
+[data-theme="dark"] .slider i {
+  color: var(--toggle-icon);
+}
+
+[data-theme="dark"] .header {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+[data-theme="dark"] .nav-links a {
+  color: var(--color-text-dark);
+}
+
+[data-theme="dark"] .social-icons a {
+  color: var(--color-text-dark);
+}
+
+[data-theme="dark"] .nav-links a:hover,
+[data-theme="dark"] .social-icons a:hover {
+  color: var(--color-primary-hover);
+}

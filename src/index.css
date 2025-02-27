@@ -1,28 +1,46 @@
-/* styles globaux */
 :root {
   --font-primary: "Inter", sans-serif;
   --font-secondary: "Raleway", sans-serif;
-  --color-text-dark: rgba(255, 255, 255, 0.87);
-  --color-bg-dark: #242424;
-  --color-text-light: #213547;
-  --color-bg-light: #ffffff;
+  --color-text-dark: rgba(255, 255, 255, 0.92);
+  --color-bg-dark: #252525;
+  --color-text-light: #2a2a2a;
+  --color-bg-light: #ebe9e9;
   --color-primary: #646cff;
   --color-primary-hover: #535bf2;
 }
 
-/* mode sombre */
 body {
   font-family: var(--font-primary);
-  color: var(--color-text-dark);
-  background-color: var(--color-bg-dark);
   margin: 0;
   padding: 0;
   line-height: 1.5;
   min-width: 320px;
   min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* links */
+/* mode clair */
+[data-theme="light"] {
+  --color-bg: var(--color-bg-light);
+  --color-text: var(--color-text-light);
+}
+
+[data-theme="light"] body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* mode sombre */
+[data-theme="dark"] {
+  --color-bg: var(--color-bg-dark);
+  --color-text: var(--color-text-dark);
+}
+
+[data-theme="dark"] body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
 a {
   font-weight: 500;
   color: var(--color-primary);
@@ -33,13 +51,11 @@ a:hover {
   color: var(--color-primary-hover);
 }
 
-/* titres */
 h1,
 h2 {
   font-family: var(--font-secondary);
 }
 
-/* boutons */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -47,7 +63,6 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s ease;
 }
@@ -56,16 +71,10 @@ button:hover {
   border-color: var(--color-primary);
 }
 
-/* mode clair */
-@media (prefers-color-scheme: light) {
-  body {
-    color: var(--color-text-light);
-    background-color: var(--color-bg-light);
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-  a:hover {
-    color: #747bff;
-  }
+[data-theme="light"] button {
+  background-color: var(--color-primary);
+}
+
+[data-theme="dark"] button {
+  background-color: #1a1a1a;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
@@ -11,30 +10,26 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 import "./App.css";
-import "./index.css"; // styles globaux
-
-function AnimatedRoutes() {
-  return (
-    <AnimatePresence mode="wait">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="*" element={<Notfound />} />
-      </Routes>
-    </AnimatePresence>
-  );
-}
+import "./index.css"; 
 
 function App() {
   return (
     <>
       <Header />
-      <AnimatedRoutes />
+      <div className="main-content">
+        {" "}
+       
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="*" element={<Notfound />} />
+        </Routes>
+      </div>
       <Footer />
-      </>
+    </>
   );
 }
 

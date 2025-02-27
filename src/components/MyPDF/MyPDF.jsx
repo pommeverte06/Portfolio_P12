@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
 });
 
-// le document PDF
+// squelette du document PDF
 const MyPDF = () => (
   <Document>
     <Page size="A4" style={styles.page}>
@@ -28,8 +28,8 @@ const MyPDF = () => (
         <Text style={styles.text}>Développeuse Front-End | React | JavaScript</Text>
       </View>
       <View style={styles.section}>
-        <Text style={styles.text}>📧 Email : contact@stephanie.dev</Text>
-        <Text style={styles.text}>🌍 Portfolio : stephanie.dev</Text>
+        <Text style={styles.text}>📧 Email : stephaniepaitre@gmail.com</Text>
+        <Text style={styles.text}>🌍 Portfolio : en attente</Text>
       </View>
     </Page>
   </Document>
