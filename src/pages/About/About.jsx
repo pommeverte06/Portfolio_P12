@@ -11,10 +11,16 @@ function About() {
       </p>
 
       <div className="cv-section">
-        <h2>Téléchargez mon CV</h2>
+        {/* <h2>Téléchargez mon CV</h2> */}
         <DownloadCV />
       </div>
     </div>
+
+    
+
+
+
+
   );
 }
 

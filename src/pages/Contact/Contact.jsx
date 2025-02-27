@@ -38,7 +38,7 @@ function Contact() {
       <form onSubmit={sendEmail} className="contact-form">
         <div className="input-group">
           <label>
-            <i className="fa-solid fa-user"></i> Nom et prénom *
+            <i className="fa-solid fa-user"></i> Nom et prénom 
           </label>
           <input
             type="text"
@@ -50,7 +50,7 @@ function Contact() {
 
         <div className="input-group">
           <label>
-            <i className="fa-solid fa-at"></i> Email *
+            <i className="fa-solid fa-at"></i> Email 
           </label>
           <input
             type="email"
@@ -62,7 +62,7 @@ function Contact() {
 
         <div className="input-group full-width">
           <label>
-            <i className="fa-solid fa-comment-dots"></i> Message *
+            <i className="fa-solid fa-comment-dots"></i> Message 
           </label>
           <textarea
             name="message"

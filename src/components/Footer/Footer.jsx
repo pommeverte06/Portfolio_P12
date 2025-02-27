@@ -7,18 +7,18 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <p>
-          © {new Date().getFullYear()} Stéphanie Paitre. Tous droits réservés.
+          © {new Date().getFullYear()} Stéphanie Paitre.
         </p>
         <div className="footer-links">
           <a
-            href="https://github.com/ton-github"
+            href="https://github.com/pommeverte06"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fa-brands fa-github"></i>
           </a>
           <a
-            href="https://linkedin.com/in/ton-linkedin"
+            href="https://linkedin.com/in/compte-linkedin"
             target="_blank"
             rel="noopener noreferrer"
           >
