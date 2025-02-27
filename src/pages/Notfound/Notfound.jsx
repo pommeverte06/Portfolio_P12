@@ -1,13 +1,13 @@
 import React from "react";
+import "./notFound.css";
+import notFoundImage from "../../assets/404.webp";
 
 function NotFound() {
   return (
-    <div>
-      <h1>Erreur 404</h1>
-      <p>La page que vous recherchez n'existe pas.</p>
+    <div className="not-found-container">
+      <img src={notFoundImage} alt="Erreur 404" className="not-found-image" />
     </div>
   );
 }
 
 export default NotFound;
-
