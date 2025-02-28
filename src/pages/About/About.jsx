@@ -1,8 +1,14 @@
+
+
+
 import React from "react";
-import DownloadCV from "../../components/MyPDF/MyPDF"; //  bouton de téléchargement du CV
 import "./about.css"; 
 
 function About() {
+  const handleOpenCV = () => {
+    window.open("/CV_3.pdf", "_blank");
+  };
+
   return (
     <div className="about-container">
       <h1>À propos de moi</h1>
@@ -11,16 +17,11 @@ function About() {
       </p>
 
       <div className="cv-section">
-        {/* <h2>Téléchargez mon CV</h2> */}
-        <DownloadCV />
+        <button onClick={handleOpenCV} className="cv-button">
+          Voir mon CV
+        </button>
       </div>
     </div>
-
-    
-
-
-
-
   );
 }
 

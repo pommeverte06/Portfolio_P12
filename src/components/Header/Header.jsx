@@ -16,15 +16,18 @@ function Header() {
             <li>
               <Link to="/">Accueil</Link>
             </li>
+
             <li>
-              <Link to="/about">À propos</Link>
-            </li>
-            <li>
-              <Link to="/portfolio">Portfolio</Link>
+              <Link to="/portfolio">Projets</Link>
             </li>
             <li>
               <Link to="/skills">Compétences</Link>
             </li>
+
+            <li>
+              <Link to="/about">À propos</Link>
+            </li>
+
             <li>
               <Link to="/contact">Contact</Link>
             </li>

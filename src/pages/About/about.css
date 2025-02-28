@@ -1,33 +1,14 @@
-.about-container {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.cv-section {
-  margin-top: 20px;
-  padding: 15px;
-  background-color: var(--color-bg-light);
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-
-.cv-section a {
-  display: inline-block;
-  background-color: var(--color-primary);
+.cv-button {
+  background-color: #6c63ff;
   color: white;
-  padding: 10px 15px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+  cursor: pointer;
   transition: background 0.3s ease;
 }
 
-.cv-section a:hover {
-  background-color: var(--color-primary-hover);
+.cv-button:hover {
+  background-color: #5548e0;
 }
-
-

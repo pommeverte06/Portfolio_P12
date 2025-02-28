@@ -18,7 +18,17 @@ body {
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+html {
+  scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none; /* IE 11 */
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll; 
+}
+/* (chrome, safari) */
+html::-webkit-scrollbar {
+  display: none;
+}
 /* mode clair */
 [data-theme="light"] {
   --color-bg: var(--color-bg-light);
