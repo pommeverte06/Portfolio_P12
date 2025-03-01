@@ -19,7 +19,7 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    // Appliquer GSAP pour un scroll fluide
+    // GSAP pour un scroll fluide
     gsap.to("html", {
       overflowY: "scroll",
       duration: 0.5,
@@ -86,7 +86,7 @@ function App() {
         </AnimatePresence>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

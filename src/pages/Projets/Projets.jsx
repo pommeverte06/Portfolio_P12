@@ -1,13 +1,19 @@
 import React from "react";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import projectsData from "../../assets/projectsData";
+import "./projets.css";
 
-function Portfolio() {
+function Projets() {
   return (
-    <div>
-      <h1>Portfolio</h1>
-      <p>Bienvenue sur ma page portfolio.</p>
+    <div className="projets-container container">
+      <h2 className="section-title">Mes réalisations</h2>
+      <div className="projets-grid">
+        {projectsData.map((project, index) => (
+          <ProjectCard key={index} {...project} />
+        ))}
+      </div>
     </div>
   );
 }
 
-export default Portfolio;
-
+export default Projets;

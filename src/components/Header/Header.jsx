@@ -18,7 +18,7 @@ function Header() {
             </li>
 
             <li>
-              <Link to="/portfolio">Projets</Link>
+              <Link to="/portfolio">Réalisations</Link>
             </li>
             <li>
               <Link to="/skills">Compétences</Link>

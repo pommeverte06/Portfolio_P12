@@ -9,6 +9,10 @@
   --color-primary-hover: #535bf2;
 }
 
+
+
+
+
 body {
   font-family: var(--font-primary);
   margin: 0;
@@ -24,7 +28,13 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: scroll; 
+  scroll-behavior: smooth; 
 }
+
+
+
+
+
 /* (chrome, safari) */
 html::-webkit-scrollbar {
   display: none;
