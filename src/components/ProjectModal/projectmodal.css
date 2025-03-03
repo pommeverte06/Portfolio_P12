@@ -12,6 +12,12 @@
   z-index: 1000;
   padding: 10px;
 }
+body.modal-open {
+  overflow: hidden; /* Empêche le scroll de la page pendant la modale */
+}
+
+
+
 
 .modal-content {
   background: #e3e1e1;

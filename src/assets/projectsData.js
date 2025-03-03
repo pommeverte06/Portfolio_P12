@@ -5,11 +5,12 @@ const projectsData = [
   {
     image: projet1,
     title: "Oh my food",
-    shortDescription: "Un site web développé avec React et API externe.",
+    shortDescription:
+      "Ce projet, conçu en mobile-first, a été réalisé en HTML et Sass, il intègre des animations CSS modernes pour une expérience utilisateur fluide et interactive.",
     fullDescription:
-      "Oh my food est une plateforme permettant de réserver des menus en ligne. Développée avec React, elle met en avant une interface utilisateur fluide et des animations dynamiques.",
-    github: "https://github.com/tonrepo/projet1",
-    live: "https://monprojet1.com",
+      "Dans le cadre de ce projet, j’ai développé le site OhMyFood en adoptant une approche mobile-first et en respectant un design précis fourni sous forme de maquettes Figma. J’ai structuré et optimisé le CSS grâce à Sass, en appliquant les bonnes pratiques de modularisation et de réutilisation des styles. L’un des défis majeurs a été l’implémentation d’animations CSS fluides et engageantes pour améliorer l’expérience utilisateur et donner vie à l’interface. J’ai également mis en œuvre un workflow Git rigoureux avec un versionnement sur GitHub, ce qui m’a permis d’acquérir des compétences essentielles en gestion de projet et collaboration sur un dépôt distant. Grâce à ce projet, j’ai renforcé ma maîtrise des fondamentaux du CSS avancé, des préprocesseurs comme Sass, ainsi que des bonnes pratiques de responsive design pour offrir une expérience utilisateur optimale sur tous les écrans.",
+    github: "https://github.com/pommeverte06/ohMyFood_P4",
+    live: "https://pommeverte06.github.io/ohMyFood_P4/",
   },
   {
     image: projet2,

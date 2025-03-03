@@ -27,14 +27,16 @@
 
 .project-content h3 {
   font-size: 1.2rem;
-  margin-top: 5px; 
+  margin-top: 7px;
+  margin-bottom: 5px; 
 }
 
 .project-content p {
   font-size: 0.9rem;
-  opacity: 0.8;
+  opacity: .9;
+  margin-top: 0;
 }
-.project-links a{
+.project-icons a{
   margin: 10px;
-  font-size: 21px;
+  font-size: 1.5rem;
 } 

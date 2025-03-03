@@ -1,8 +1,14 @@
 import React from "react";
 import "./projectmodal.css";
+import { useEffect } from "react";
 
 function ProjectModal({ project, onClose }) {
   if (!project) return null;
+
+  useEffect(() => {
+    document.body.classList.add("modal-open");
+    return () => document.body.classList.remove("modal-open");
+  }, []);
 
   return (
     <div className="modal-overlay" onClick={onClose}>
