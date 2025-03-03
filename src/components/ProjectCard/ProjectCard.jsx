@@ -1,28 +1,38 @@
 import React from "react";
 import "./projectcard.css";
 
-const ProjectCard = ({ image, title, description, github, live }) => {
+function ProjectCard({ project, onClick }) {
   return (
-    <div className="project-card">
-      <img src={image} alt={title} className="project-image" />
+    <div className="project-card" onClick={onClick}>
+      <img src={project.image} alt={project.title} className="project-image" />
       <div className="project-content">
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <div className="project-links">
-          {github && (
-            <a href={github} target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-github"></i> 
+        <h3>{project.title}</h3>
+        <p>{project.shortDescription}</p>{" "}
+        <div className="project-icons">
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <i className="fa-brands fa-github"></i>
             </a>
           )}
-          {live && (
-            <a href={live} target="_blank" rel="noopener noreferrer">
-              <i className="fa-solid fa-arrow-up-right-from-square"></i> 
+          {project.live && (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <i className="fa-solid fa-globe"></i>
             </a>
           )}
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default ProjectCard;

@@ -5,8 +5,8 @@
   --color-bg-dark: #252525;
   --color-text-light: #2a2a2a;
   --color-bg-light: #ebe9e9;
-  --color-primary: #646cff;
-  --color-primary-hover: #535bf2;
+  --color-primary: #a2c5f5;
+  --color-primary-hover: #7178f4;
 }
 
 
@@ -88,11 +88,11 @@ button {
 }
 
 button:hover {
-  border-color: var(--color-primary);
+  border-color: #a2c5f5;
 }
 
 [data-theme="light"] button {
-  background-color: var(--color-primary);
+  background-color: #a2c5f5;
 }
 
 [data-theme="dark"] button {

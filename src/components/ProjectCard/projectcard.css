@@ -15,6 +15,7 @@
 .project-card:hover {
   transform: scale(1.03);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .project-image {
@@ -35,5 +36,5 @@
 }
 .project-links a{
   margin: 10px;
-  font-size: 20px;
+  font-size: 21px;
 } 
