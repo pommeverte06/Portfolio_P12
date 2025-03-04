@@ -1,5 +1,5 @@
 import React from "react";
-import "./notFound.css";
+import "./notfound.css";
 import notFoundImage from "../../assets/404.webp";
 
 function NotFound() {
