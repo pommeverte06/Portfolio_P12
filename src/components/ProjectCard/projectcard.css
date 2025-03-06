@@ -12,8 +12,9 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 .project-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
@@ -25,18 +26,38 @@
   border-radius: 8px;
 }
 
+.project-content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .project-content h3 {
   font-size: 1.2rem;
   margin-top: 7px;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 .project-content p {
   font-size: 0.9rem;
-  opacity: .9;
+  opacity: 0.9;
   margin-top: 0;
 }
-.project-icons a{
-  margin: 10px;
-  font-size: 1.5rem;
-} 
+
+.project-link {
+  text-align: center;
+  margin-top: auto; 
+  padding-bottom: 10px;
+}
+
+.en-savoir-plus {
+  font-weight: bold;
+  color: #82b9f4;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.en-savoir-plus:hover {
+  color: #0056b3;
+}
