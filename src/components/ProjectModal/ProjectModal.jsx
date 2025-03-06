@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./projectmodal.css";
-import { useEffect } from "react";
 
 function ProjectModal({ project, onClose }) {
   if (!project) return null;
 
   useEffect(() => {
-    document.body.classList.add("modal-open");
-    return () => document.body.classList.remove("modal-open");
+    document.body.style.position = "fixed";
+    document.body.style.width = "100%";
+    document.body.style.overflowY = "hidden";
+
+    return () => {
+      document.body.style.position = "";
+      document.body.style.width = "";
+      document.body.style.overflowY = "";
+    };
   }, []);
 
   return (
