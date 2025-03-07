@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useThemeStore from "../../store/themeStore"; // store zustand
-import "./Header.css";
+import "./header.css";
 
 function Header() {
   const { theme, toggleTheme } = useThemeStore();

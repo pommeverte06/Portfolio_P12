@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 
 const pageVariants = {
-  initial: { opacity: 0, y: "-50vh" }, // Départ légèrement au-dessus
-  in: { opacity: 1, y: 0 }, // Arrivée douce
-  out: { opacity: 0, y: "50vh" }, // Disparition en bas
+  initial: { opacity: 0, y: "-50vh" }, // départ légèrement au-dessus
+  in: { opacity: 1, y: 0 }, // arrivée douce
+  out: { opacity: 0, y: "50vh" }, // disparition en bas
 };
 
 const pageTransition = {
   type: "tween",
-  ease: [0.25, 0.1, 0.25, 1], // Courbe de Bézier ultra fluide (comme CSS "ease-in-out")
-  duration: 0.5, // Ajuste la vitesse pour plus de fluidité
+  ease: [0.25, 0.1, 0.25, 1], // courbe de Bézier ultra fluide (comme CSS "ease-in-out")
+  duration: 0.5, // ajuste la vitesse pour plus de fluidité
 };
 
 function PageTransition({ children }) {
@@ -20,7 +20,7 @@ function PageTransition({ children }) {
       exit="out"
       variants={pageVariants}
       transition={pageTransition}
-      style={{ position: "absolute", width: "100%" }} // Important pour éviter les décalages
+      style={{ position: "absolute", width: "100%" }} // important pour éviter les décalages
     >
       {children}
     </motion.div>
