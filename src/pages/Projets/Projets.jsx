@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import ProjectModal from "../../components/ProjectModal/ProjectModal";
-import projectsData from "../../assets/projectsdata";
+import projectsData from "../../assets/projectsData";
 import "./projets.css";
 
 function Projets() {
