@@ -6,7 +6,7 @@ const skillsData = [
   { name: "CSS", icon: "fa-css3-alt", level: 80 },
   { name: "JavaScript", icon: "fa-js", level: 55 },
   { name: "React", icon: "fa-react", level: 55 },
-  { name: "Redux", icon: "fa-npm", level: 55 },
+  { name: "Redux", icon: "fa-redux", level: 55 },
   { name: "Sass", icon: "fa-sass", level: 80 },
   { name: "Git", icon: "fa-git-alt", level: 70 },
   { name: "GitHub", icon: "fa-github", level: 70 },
@@ -42,7 +42,7 @@ function Skills() {
                       style={{ width: `${skill.level}%` }}
                     ></div>
                   </div>
-                  <span className="progress-percentage">{skill.level}%</span>
+                  {/* <span className="progress-percentage">{skill.level}%</span> */}
                 </div>
               )}
             </div>

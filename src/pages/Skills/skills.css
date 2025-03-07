@@ -60,7 +60,6 @@
   transform: scale(1.1);
 }
 
-/* Barre de progression */
 .progress-container {
   position: absolute;
   bottom: -15px;
@@ -84,9 +83,11 @@
   transition: width 0.3s ease-in-out;
 }
 
-.progress-percentage {
+/* .progress-percentage {
   font-size: 12px;
   margin-left: 5px;
   color: #82b9f4;
-}
-
+  position: relative;
+  bottom: 20px;
+  right: 60px;
+} */

@@ -31,7 +31,6 @@ function Contact() {
   };
 
   return (
-    <div className="container">
     <div className="contact-container ">
       <h2 className="contact-title">Contact</h2>
       <p className="contact-subtitle">N’hésitez pas à me contacter.</p>
@@ -78,7 +77,6 @@ function Contact() {
 
         {message && <p className={messageType}>{message}</p>}
       </form>
-    </div>
     </div>
   );
 }

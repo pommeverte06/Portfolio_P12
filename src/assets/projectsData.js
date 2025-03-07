@@ -8,11 +8,12 @@ const projectsData = [
   {
     image: projet11,
     title: "Argent Bank",
-    shortDescription: "Développement d'une application bancaire avec React, Redux et une gestion sécurisée des utilisateurs. Mise en place de l'authentification et du tableau de bord et intégration des bonnes pratiques Green Code.",
+    shortDescription:
+      "Développement d'une application bancaire avec React, Redux et une gestion sécurisée des utilisateurs. Mise en place de l'authentification et du tableau de bord et intégration des bonnes pratiques Green Code.",
     fullDescription:
       "Pour ce projet, j’ai développé une application bancaire en ligne en utilisant React et Redux, garantissant ainsi une gestion fluide et optimisée de l’état global de l’application. L’un des défis majeurs était la mise en place d’un système d’authentification sécurisé, permettant aux utilisateurs de ✔ Se connecter et se déconnecter en toute sécurité. ✔ Accéder à leur tableau de bord personnalisé. ✔ Consulter les informations de leur profil, avec un accès conditionné à une authentification réussie, assurant ainsi une protection stricte des données sensibles. L’application inclut également un système de gestion des transactions bancaires, offrant un affichage détaillé des opérations du mois en cours. Pour assurer une communication efficace entre le front-end et le back-end, j’ai conçu et documenté les endpoints API en suivant la norme Swagger, ce qui facilite la maintenance et l’évolution de l’architecture. Dans une démarche Green Code, j’ai appliqué des bonnes pratiques d’optimisation, notamment :✔ Optimisation des images pour réduire leur impact sur la performance. ✔  Structuration modulaire du projet avec des composants réutilisables pour limiter la redondance du code. Afin d’améliorer mon processus de développement et de déboguer efficacement l’état global de l’application, j’ai utilisé React Developer Tools, un outil indispensable pour analyser et optimiser l’arborescence des composants et l’état du store Redux. Ce projet m’a permis de renforcer mes compétences en gestion d’état avec Redux, en authentification sécurisée, ainsi qu’en modélisation d’API REST avec Swagger. J’ai également approfondi mon approche du développement efficace et durable grâce à des pratiques d’optimisation et de modularisation du code.",
     github: "https://github.com/monrepo/projet11",
-    live: "https://monprojet11.com",
+    live: "https://argent-bank-p10.vercel.app/",
   },
 
   {
@@ -23,7 +24,7 @@ const projectsData = [
     fullDescription:
       "Ce projet m’a permis de concevoir une application moderne et dynamique dédiée à la location immobilière, en appliquant les bonnes pratiques du développement front-end. Développée avec React et React Router, l’application offre une navigation fluide et intuitive, mettant en avant des fonctionnalités interactives et une gestion optimisée des données. L’un des défis majeurs a été la mise en place du routage avec React Router, y compris la gestion des erreurs et des redirections (404) pour garantir une navigation cohérente et sécurisée. J’ai structuré l’application autour de composants réutilisables, assurant une meilleure maintenabilité et évolutivité du code. L’expérience utilisateur a été enrichie grâce à plusieurs fonctionnalités dynamiques : -Carrousel interactif permettant d'afficher plusieurs images par logement, avec une gestion fluide des transitions et des événements utilisateur. -Système de collapsibles pour afficher dynamiquement les détails des propriétés, offrant un affichage épuré et optimisé. -Animations CSS intégrées pour améliorer l’interactivité et rendre l’interface plus agréable. L’ensemble du projet a été structuré avec SASS, facilitant la gestion et l’organisation des styles CSS de manière modulaire. Par ailleurs, les données de l’application sont chargées dynamiquement à partir d’un fichier JSON simulant un backend, permettant ainsi de gérer l'affichage dynamique des logements.L’utilisation de Vite a été un atout pour optimiser les performances et accélérer le développement. J’ai également appliqué des principes de Green Code, en veillant à optimiser les images et à structurer le projet de façon efficiente. Ce projet m’a permis d’approfondir mes connaissances en React, en gestion des routes dynamiques et en structuration modulaire du code. J’ai pu améliorer mon approche du développement d’interfaces interactives, tout en optimisant les performances et l’accessibilité de l’application.",
     github: "https://github.com/pommeverte06/KASA_P7",
-    // live: "https://monprojet7.com",
+    live: "https://kasa-location-ib2ntuvrp-stephanie-paitre-s-projects.vercel.app/",
   },
 
   {
