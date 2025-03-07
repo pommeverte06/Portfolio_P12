@@ -11,6 +11,7 @@
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  /* border: 3px solid #82b9f4; */
 }
 
 .project-card:hover {

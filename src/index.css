@@ -5,8 +5,8 @@
   --color-bg-dark: #252525;
   --color-text-light: #2a2a2a;
   --color-bg-light: #ebe9e9;
-  --color-primary: #a2c5f5;
-  --color-primary-hover: #7178f4;
+  --color-primary: #ad59d4;
+  --color-primary-hover: #ad59d4;
 }
 
 
@@ -88,11 +88,11 @@ button {
 }
 
 button:hover {
-  border-color: #a2c5f5;
+  border-color: #ad59d4;
 }
 
 [data-theme="light"] button {
-  background-color: #a2c5f5;
+  background-color: #ad59d4;
 }
 
 [data-theme="dark"] button {
