@@ -94,9 +94,9 @@
 }
 
 :root {
-  --toggle-bg: #ffd700;
+  --toggle-bg: #97c2f8;
   --toggle-circle: white;
-  --toggle-icon: #f88854;
+  --toggle-icon: #f7d305;
 }
 
 [data-theme="dark"] {
@@ -133,4 +133,86 @@
 [data-theme="dark"] .nav-links a:hover,
 [data-theme="dark"] .social-icons a:hover {
   color: var(--color-primary-hover);
+}
+/* ********************************************** */
+
+/* --- Bouton hamburger pour le menu mobile --- */
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: var(--color-text-light);
+  cursor: pointer;
+}
+
+/* --- Drawer Menu Mobile (menu qui slide depuis la droite) --- */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Caché par défaut */
+  width: 250px;
+  height: 100%;
+  background: var(--color-bg-light);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  z-index: 1100;
+}
+
+.mobile-menu.open {
+  right: 0; /* Quand il est ouvert, il revient à droite */
+}
+
+.close-menu {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.mobile-nav-links {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.mobile-nav-links li {
+  margin: 15px 0;
+}
+
+.mobile-nav-links a {
+  text-decoration: none;
+  color: var(--color-text-light);
+  font-size: 18px;
+  display: block;
+  padding: 8px;
+}
+
+/* --- Bouton clair/sombre dans le menu mobile --- */
+.mobile-theme-switch {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--color-text-light);
+  width: 100%;
+  text-align: left;
+  padding: 10px 0;
+}
+
+/* --- Media Queries : cacher le menu desktop sur mobile et activer le hamburger --- */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none; /* Cache la nav desktop */
+  }
+
+  .hamburger-menu {
+    display: block; /* Affiche le bouton hamburger */
+  }
 }
