@@ -34,7 +34,7 @@ function Header() {
           </ul>
         </nav>
 
-        {/* bouton mode clair/sombre */}
+        {/* bouton mode clair/sombre en version desktop */}
         <div className="theme-switch" onClick={toggleTheme}>
           <div className={`slider ${theme === "dark" ? "dark-mode" : ""}`}>
             <i
@@ -43,13 +43,13 @@ function Header() {
           </div>
         </div>
 
-        {/* bouton hamburger */}
+        {/* bouton burger */}
         <button className="hamburger-menu" onClick={toggleMenu}>
           <i className="fa-solid fa-bars"></i>
         </button>
       </div>
 
-      {/* tiroir menu mobile */}
+      {/* tiroir menu mobil */}
       <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
         <button className="close-menu" onClick={closeMenu}>
           <i className="fa-solid fa-xmark"></i>
@@ -80,9 +80,13 @@ function Header() {
               Contact
             </Link>
           </li>
-          <li>
-            <button className="mobile-theme-switch" onClick={toggleTheme}>
-              {theme === "light" ? "🌞 Mode Clair" : "🌙 Mode Sombre"}
+          <li className="mobile-theme-switch">
+            <button onClick={toggleTheme} className="icon-only-toggle">
+              <i
+                className={`fa-solid ${
+                  theme === "light" ? "fa-sun" : "fa-moon"
+                }`}
+              ></i>
             </button>
           </li>
         </ul>
