@@ -22,7 +22,7 @@ function Skills() {
         <div className="skills-banner">
           {skillsData.concat(skillsData).map((skill, index) => (
             <div key={index} className="skill-item">
-              {/* vérification : icône FontAwesome ou image SVG */}
+              {/* vérification : icone FA ou image SVG */}
               {typeof skill.icon === "string" &&
               skill.icon.startsWith("fa-") ? (
                 <i className={`fab ${skill.icon}`}></i>
