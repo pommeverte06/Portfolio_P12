@@ -1,15 +1,20 @@
- 
 .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-title {
   font-size: 30px;
   margin: 15px 0;
 }
+.contact-subtitle{
+
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .contact-form {
   background: var(--color-bg-light);
   padding: 25px;
@@ -42,7 +47,7 @@
 .input-group input,
 .input-group textarea {
   padding: 10px;
-  border: 1px solid #a2c5f5;
+  border: 1px dotted #ac6eac;
   border-radius: 5px;
   font-size: 16px;
   background-color: var(--color-bg-light);
@@ -58,8 +63,8 @@
 
 .input-group input:focus,
 .input-group textarea:focus {
-  border-color: #a2c5f5;
-  box-shadow: 0px 0px 8px rgba(100, 108, 255, 0.6);
+  border-color: #ad59ad;
+  box-shadow: 0px 0px 8px rgb(173, 89, 173, 0.4);
 }
 
 .contact-button {
@@ -67,7 +72,7 @@
   padding: 12px;
   font-size: 16px;
   font-weight: bold;
-  color: var(--color-text-light);
+  color: var(--color-text-dark);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -76,8 +81,9 @@
 
 .contact-button:hover {
   background-color: var(--color-primary-hover);
-  transform: translateY(-2px);
+  transform: scaleY(1.1);
   color: white;
+  transition: transform 0.2s ease-in-out;
 }
 
 .success-message {
@@ -112,10 +118,43 @@
 [data-theme="dark"] .contact-button:hover {
   background-color: var(--color-primary);
 }
+/* réseaux sociaux */
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
 
-/* ======== RESPONSIVE DESIGN ======== */
+.social-links p {
+  font-size: 16px;
+  font-weight:bold;
+  margin-bottom: 10px;
+}
 
-/* (max-width: 1024px) */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 30px;
+  color: var(--color-primary);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--color-primary-hover);
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+/* ======== RESPONSIVE ======== */
+
+/* max-width: 1024px */
 @media (max-width: 1024px) {
   .contact-container {
     padding: 15px;
@@ -138,7 +177,7 @@
   }
 }
 
-/* (max-width: 768px) */
+/* max-width: 768px */
 @media (max-width: 768px) {
   .contact-container {
     padding: 10px;
@@ -172,7 +211,7 @@
   }
 }
 
-/* (max-width: 480px) */
+/* max-width: 480px */
 @media (max-width: 480px) {
   .contact-container {
     padding: 5px;
@@ -199,4 +238,3 @@
     padding: 8px;
   }
 }
-

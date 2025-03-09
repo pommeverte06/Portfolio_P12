@@ -31,14 +31,19 @@ function Contact() {
   };
 
   return (
-    <div className="contact-container ">
-      <h2 className="contact-title">Contact</h2>
-      <p className="contact-subtitle">N’hésitez pas à me contacter.</p>
+    <div className="contact-container">
+      <h2 className="contact-title">Discutons de votre projet !</h2>
+      <p className="contact-subtitle">
+        Une idée ? Un projet ? Ou juste envie d’échanger ? <br />
+        Je suis disponible pour en discuter et vous aider à concrétiser votre
+        vision.
+        <br /> Contactez-moi, je réponds rapidement !
+      </p>
 
       <form onSubmit={sendEmail} className="contact-form">
         <div className="input-group">
           <label>
-            <i className="fa-solid fa-user"></i> Nom et prénom 
+            <i className="fa-solid fa-user"></i> Nom et prénom
           </label>
           <input
             type="text"
@@ -50,7 +55,7 @@ function Contact() {
 
         <div className="input-group">
           <label>
-            <i className="fa-solid fa-at"></i> Email 
+            <i className="fa-solid fa-at"></i> Email
           </label>
           <input
             type="email"
@@ -62,7 +67,7 @@ function Contact() {
 
         <div className="input-group full-width">
           <label>
-            <i className="fa-solid fa-comment-dots"></i> Message 
+            <i className="fa-solid fa-comment-dots"></i> Message
           </label>
           <textarea
             name="message"
@@ -77,6 +82,26 @@ function Contact() {
 
         {message && <p className={messageType}>{message}</p>}
       </form>
+
+      <div className="social-links">
+        <p>Retrouvez-moi aussi sur :</p>
+        <div className="social-icons">
+          <a
+            href="https://github.com/pommeverte06"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/stephanie-paitre/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
