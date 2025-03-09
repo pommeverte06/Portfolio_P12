@@ -9,10 +9,6 @@
   --color-primary-hover: #ad59d4;
 }
 
-
-
-
-
 body {
   font-family: var(--font-primary);
   margin: 0;
@@ -21,14 +17,15 @@ body {
   min-width: 320px;
   min-height: 100vh;
   transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 html {
   scrollbar-width: none; /* firefox */
   -ms-overflow-style: none; /* IE 11 */
   scroll-behavior: smooth;
   overflow-x: hidden;
-  overflow-y: scroll; 
-  scroll-behavior: smooth; 
+  overflow-y: scroll;
+  scroll-behavior: smooth;  
 }
 
 
