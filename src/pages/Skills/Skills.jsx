@@ -22,7 +22,7 @@ function Skills() {
         <div className="skills-banner">
           {skillsData.concat(skillsData).map((skill, index) => (
             <div key={index} className="skill-item">
-              {/* vérification : icone FA ou image SVG */}
+              {/* verification : icone FA ou image SVG */}
               {typeof skill.icon === "string" &&
               skill.icon.startsWith("fa-") ? (
                 <i className={`fab ${skill.icon}`}></i>
@@ -33,24 +33,81 @@ function Skills() {
                   className="skill-icon-svg"
                 />
               )}
-              <span>{skill.name}</span>
+              {/* <span>{skill.name}</span> */}
+              <span className="sr-only">{skill.name}</span>
             </div>
           ))}
         </div>
       </div>
       <section className="skills-description">
-      <h2>Au fil de ma formation, j’ai consolidé mes bases et développé une vraie <strong>maîtrise des outils et bonnes pratiques du développement front-end.</strong></h2><br></br>
- <article><h2>HTML, CSS & Sass</h2> <p> Structurer des interfaces <strong>claires et responsives</strong>, optimiser l'organisation des styles avec Sass. Avec une attention particulière à l'ergonomie et aux animations pour <strong>améliorer l’expérience utilisateur</strong>.</p></article><br></br>
-
- <article><h2>JavaScript & React </h2> <p>Développement de sites <strong>dynamiques</strong> avec des composants <strong>modulaires et réutilisables</strong>. React m’a appris à optimiser le rendu et la gestion des états pour des applications <strong>fluides et performantes.</strong></p></article><br></br>
-
- <article><h2>Redux </h2> <p>Gérer <strong>l’état global d’une application</strong> de manière efficace, surtout pour des projets plus complexes nécessitant une bonne organisation des données.</p></article><br></br>
-
- <article><h2>Git & GitHub</h2><p>Versionner mon code proprement, <strong>travailler en équipe</strong> et assurer un suivi <strong>rigoureux du développement</strong>.</p></article><br></br>
-
- <article><h2>Optimisation & Green Code</h2> <p>Réduction du poids des ressources, <strong>amélioration des performances</strong> et respect des bonnes pratiques pour un développement web plus <strong>durable.</strong></p></article> <br></br>
-
-<h2><p>Aujourd’hui, je suis capable de <strong>concevoir et développer une application web de A à Z</strong>, en alliant performance, accessibilité et esthétisme. Toujours curieuse d’apprendre, je suis prête à relever de nouveaux défis techniques et créatifs !</p></h2><br></br>
+        <h2>
+          Au fil de mes acquisitions, j’ai consolidé mes bases et développé une
+          vraie{" "}
+          <strong>
+            maîtrise des outils et bonnes pratiques du développement front-end.
+          </strong>
+        </h2>
+        <br></br>
+        <article>
+          <h2>HTML, CSS & Sass</h2>{" "}
+          <p>
+            {" "}
+            Structurer des interfaces <strong>claires et responsives</strong>,
+            optimiser l'organisation des styles avec Sass. Avec une attention
+            particulière à l'ergonomie et aux animations pour{" "}
+            <strong>améliorer l’expérience utilisateur</strong>.
+          </p>
+        </article>
+        <br></br>
+        <article>
+          <h2>JavaScript & React </h2>{" "}
+          <p>
+            Développement de sites <strong>dynamiques</strong> avec des
+            composants <strong>modulaires et réutilisables</strong>. React m’a
+            appris à optimiser le rendu et la gestion des états pour des
+            applications <strong>fluides et performantes.</strong>
+          </p>
+        </article>
+        <br></br>
+        <article>
+          <h2>Redux </h2>{" "}
+          <p>
+            Gérer <strong>l’état global d’une application</strong> de manière
+            efficace, surtout pour des projets plus complexes nécessitant une
+            bonne organisation des données.
+          </p>
+        </article>
+        <br></br>
+        <article>
+          <h2>Git & GitHub</h2>
+          <p>
+            Versionner mon code proprement,{" "}
+            <strong>travailler en équipe</strong> et assurer un suivi{" "}
+            <strong>rigoureux du développement</strong>.
+          </p>
+        </article>
+        <br></br>
+        <article>
+          <h2>Optimisation & Green Code</h2>{" "}
+          <p>
+            Réduction du poids des ressources,{" "}
+            <strong>amélioration des performances</strong> et respect des bonnes
+            pratiques pour un développement web plus <strong>durable.</strong>
+          </p>
+        </article>{" "}
+        <br></br>
+        <h2>
+          <p>
+            Je suis capable de{" "}
+            <strong>
+              concevoir et développer une application web de A à Z
+            </strong>
+            , en alliant performance, accessibilité et esthétisme. Toujours
+            curieuse d’apprendre, je suis prête à relever de nouveaux défis
+            techniques et créatifs !
+          </p>
+        </h2>
+        <br></br>
       </section>
     </div>
   );
