@@ -9,7 +9,7 @@ function Header() {
   const { isOpen, toggleMenu, closeMenu } = useMenuStore();
 
   return (
-    <header className="header">
+    <header className="header" data-theme={theme}>
       <div className="header-container">
         <h1 className="logo">Stéphanie Paitre</h1>
 
@@ -49,7 +49,7 @@ function Header() {
         </button>
       </div>
 
-      {/* tiroir menu mobil */}
+      {/* tiroir menu mobile */}
       <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
         <button className="close-menu" onClick={closeMenu}>
           <i className="fa-solid fa-xmark"></i>
@@ -80,14 +80,15 @@ function Header() {
               Contact
             </Link>
           </li>
-          <li className="mobile-theme-switch">
-            <button onClick={toggleTheme} className="icon-only-toggle">
+          {/* bouton mode clair/sombre idem version desktop */}
+          <li className="mobile-theme-switch" onClick={toggleTheme}>
+            <div className={`slider ${theme === "dark" ? "dark-mode" : ""}`}>
               <i
                 className={`fa-solid ${
                   theme === "light" ? "fa-sun" : "fa-moon"
                 }`}
               ></i>
-            </button>
+            </div>
           </li>
         </ul>
       </div>
