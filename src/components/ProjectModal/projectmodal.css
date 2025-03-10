@@ -4,8 +4,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px); 
-  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,18 +13,15 @@
   padding: 10px;
 }
 body.modal-open {
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-
-
-
 .modal-content {
-  background: #e3e1e1;
+  background: rgb(245, 238, 247);
   width: 90%;
-  max-width: 800px; 
+  max-width: 800px;
   max-height: 90vh;
-  overflow-y: auto; 
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -34,7 +31,7 @@ body.modal-open {
 
 .modal-image {
   width: 100%;
-  max-height: auto; 
+  max-height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -52,10 +49,10 @@ body.modal-open {
   top: 10px;
   right: 10px;
   border: none;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   cursor: pointer;
   background: none;
-  color: #000;
+  color: white;
   z-index: 3;
 }
 
@@ -67,29 +64,32 @@ body.modal-open {
 }
 
 .modal-links a {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #333;
   transition: color 0.3s ease;
 }
 
 .modal-links a:hover {
-  color: #7178f4;
+  color: #ad59ad;
 }
 
 .modal-content::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 .modal-content {
-  scrollbar-width: none; 
-  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-/* responsive */
-@media (max-width: 768px) {
+
+
+/* tablettes */
+@media (max-width: 1024px) {
   .modal-content {
     width: 95%;
+    max-width: 700px;
     max-height: 85vh;
-    padding: 15px;
+    padding: 18px;
   }
 
   .modal-text {
@@ -99,5 +99,54 @@ body.modal-open {
 
   .modal-links {
     gap: 15px;
+  }
+}
+
+/*  mobiles  */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    padding: 15px;
+  }
+
+  .modal-text {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .modal-links a {
+    font-size: 1.8rem;
+  }
+}
+
+/* petits ecrans */
+@media (max-width: 480px) {
+  .modal-content {
+    width: 90%;
+    /* max-width: 400px; */
+    max-height: 75vh;
+    padding: 10px;
+    margin-right: 18px;
+  }
+
+  .modal-text {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .modal-links {
+    gap: 10px;
+  }
+
+  .modal-links a {
+    font-size: 1.5rem;
+  }
+
+  .close-button {
+    font-size: 0.5rem;
+    top: 5px;
+    right: 5px;
   }
 }
