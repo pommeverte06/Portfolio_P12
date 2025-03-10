@@ -8,8 +8,8 @@ const pageVariants = {
 
 const pageTransition = {
   type: "tween",
-  ease: [0.25, 0.1, 0.25, 1], // courbe de Bézier ultra fluide (comme CSS "ease-in-out")
-  duration: 0.5, // ajuste la vitesse pour plus de fluidité
+  ease: [0.25, 0.1, 0.25, 1], // courbe de bezier 
+  duration: 0.5, // ajuste la vitesse 
 };
 
 function PageTransition({ children }) {

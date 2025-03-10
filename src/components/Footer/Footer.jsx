@@ -18,7 +18,7 @@ function Footer() {
             <i className="fa-brands fa-github"></i>
           </a>
           <a
-            href="https://linkedin.com/in/compte-linkedin"
+            href="https://linkedin.com/in/stephanie-paitre"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -11,12 +11,12 @@
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  /* border: 3px solid #82b9f4; */
+  border: 1px solid #ad59ad;
 }
 
 .project-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
@@ -44,6 +44,7 @@
   font-size: 0.9rem;
   opacity: 0.9;
   margin-top: 0;
+  font-weight: bold;
 }
 
 .project-link {
@@ -58,11 +59,9 @@
 } 
 .en-savoir-plus {
   font-weight: bold;
-  color: #82b9f4;
+  color: #ad59ad;
   cursor: pointer;
   text-decoration: none;
 }
 
-.en-savoir-plus:hover {
-  color: #0056b3;
-}
+
