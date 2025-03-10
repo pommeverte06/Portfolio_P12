@@ -33,11 +33,14 @@ function Contact() {
   return (
     <div className="contact-container">
       <h2 className="contact-title">Discutons de votre projet !</h2>
+
       <p className="contact-subtitle">
-        Une idée ? Un projet ? Ou juste envie d’échanger ? <br />
-        Je suis disponible pour en discuter et vous aider à concrétiser votre
-        vision.
-        <br /> Contactez-moi, je réponds rapidement !
+        <strong>Transformons vos idées en un projet concret !</strong> <br />
+        De la conception au développement, je vous aide à créer une expérience
+        utilisateur fluide et engageante. <br />
+        <br />
+        <strong>Parlons-en dès maintenant !</strong>
+        <br />
       </p>
 
       <form onSubmit={sendEmail} className="contact-form">
