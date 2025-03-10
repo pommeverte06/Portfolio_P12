@@ -38,8 +38,8 @@ body.modal-open {
 
 .modal-text {
   padding: 20px;
-  text-align: center;
-  color: #000;
+  text-align: justify;
+  color: black;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -64,7 +64,7 @@ body.modal-open {
 }
 
 .modal-links a {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #333;
   transition: color 0.3s ease;
 }
@@ -132,20 +132,20 @@ body.modal-open {
   }
 
   .modal-text {
-    font-size: 0.85rem;
+    font-size: 1rem;
     padding: 8px;
   }
 
   .modal-links {
-    gap: 10px;
+    gap: 30px;
   }
 
   .modal-links a {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .close-button {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     top: 5px;
     right: 5px;
   }
