@@ -35,7 +35,7 @@ function Contact() {
       <h2 className="contact-title">Discutons de votre projet !</h2>
 
       <p className="contact-subtitle">
-        <strong>Transformons vos idées en un projet concret !</strong> <br />
+        Transformons vos idées en un projet concret ! <br />
         De la conception au développement, je vous aide à créer une expérience
         utilisateur fluide et engageante. <br />
         <br />

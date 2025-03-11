@@ -39,6 +39,7 @@ function App() {
               element={
                 <PageTransition>
                   <Home />
+                  <Footer />
                 </PageTransition>
               }
             />
@@ -47,6 +48,7 @@ function App() {
               element={
                 <PageTransition>
                   <About />
+                  <Footer />
                 </PageTransition>
               }
             />
@@ -55,6 +57,7 @@ function App() {
               element={
                 <PageTransition>
                   <Contact />
+                  <Footer />
                 </PageTransition>
               }
             />
@@ -63,6 +66,7 @@ function App() {
               element={
                 <PageTransition>
                   <Projets />
+                  <Footer />
                 </PageTransition>
               }
             />
@@ -71,6 +75,7 @@ function App() {
               element={
                 <PageTransition>
                   <Skills />
+                  <Footer />
                 </PageTransition>
               }
             />

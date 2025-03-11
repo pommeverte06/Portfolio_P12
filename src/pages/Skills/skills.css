@@ -5,7 +5,6 @@
 .skills-container h1 {
   font-size: 2rem;
   margin-bottom: 5px;
-  opacity: 0.5;
 }
 .skills-banner-wrapper {
   display: flex;
@@ -20,7 +19,6 @@
   margin-top: 10px;
 }
 
-/* la banner de skills qui defilent */
 @keyframes scroll-skills {
   from {
     transform: translateX(0);
@@ -44,7 +42,6 @@
   transition: transform 0.3s ease-in-out;
   position: relative;
   border: 2px solid #ad59d443;
-  /* box-shadow: 0px 0px 10px rgba(173, 89, 212, 0.5); */
 }
 
 .skill-item i {
@@ -58,10 +55,6 @@
   font-weight: bolder;
 }
 
-/* .skill-item:hover {
-  transform: scale(1.06);
-  box-shadow: 0px 0px 10px rgba(173, 89, 212, 0.8); 
-} */
 .skill-icon-svg {
   width: 50px;
   height: 50px;
@@ -77,11 +70,10 @@
 }
 
 .skills-description p {
-  font-size: 16px;
+  font-size: 18px;
 }
 .skills-description strong {
   color: #ad59d4;
-  font-style: italic;
 }
 .skills-description h2 {
   font-size: 18px;
@@ -91,7 +83,7 @@
   padding: 7px 10px 10px 10px;
   border-radius: 15px 15px 15px 15px;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 0px 25px rgba(21, 21, 22, 0.3);
+  box-shadow: 0px 0px 25px rgba(21, 21, 22, 0.2);
 }
 .sr-only {
   position: absolute;
@@ -102,4 +94,104 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+/* max-width: 1024px */
+@media screen and (max-width: 1024px) {
+  .skills-banner {
+    animation: scroll-skills 25s linear infinite;
+  }
+
+  .skill-item {
+    width: 120px;
+    height: 120px;
+    margin: 8px;
+  }
+
+  .skill-item i {
+    font-size: 40px;
+  }
+
+  .skill-icon-svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skills-description {
+    padding: 15px;
+    max-width: 90%;
+  }
+}
+
+/* max-width: 768px */
+@media screen and (max-width: 768px) {
+  .skills-banner {
+    animation: scroll-skills 20s linear infinite;
+  }
+
+  .skill-item {
+    width: 100px;
+    height: 100px;
+    margin: 6px;
+  }
+
+  .skill-item i {
+    font-size: 35px;
+  }
+
+  .skill-icon-svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .skills-description h2 {
+    font-size: 16px;
+  }
+
+  .skills-description p {
+    font-size: 14px;
+  }
+
+  .skills-container h1 {
+    font-size: 1.7rem;
+  }
+}
+
+/* max-width: 480px */
+@media screen and (max-width: 480px) {
+  .skills-banner {
+    animation: scroll-skills 15s linear infinite;
+  }
+
+  .skill-item {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+  }
+
+  .skill-item i {
+    font-size: 30px;
+  }
+
+  .skill-icon-svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .skills-description {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .skills-description h2 {
+    font-size: 15px;
+  }
+
+  .skills-description p {
+    font-size: 13px;
+  }
+
+  .skills-container h1 {
+    font-size: 1.5rem;
+  }
 }

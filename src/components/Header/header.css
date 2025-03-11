@@ -45,7 +45,6 @@
   color: var(--color-text-dark);
 }
 
-
 .header-container {
   width: 100%;
   display: flex;
@@ -214,9 +213,8 @@
   padding: 8px;
 }
 
-
-/* ======== RESPONSIVE ======== */
-@media (max-width: 768px) {
+/* mobiles et tablette : jusqu'à 1023px */
+@media (max-width: 1023px) {
   .desktop-nav {
     display: none;
   }
@@ -229,13 +227,16 @@
     display: none;
   }
 
-  
-
   .mobile-theme-switch {
     display: flex;
+    justify-content: center;
     position: relative;
-   left: 40%;
+    left: 40%;
   }
-  
+}
 
+@media (max-width: 350px) {
+  .logo {
+    font-size: 28px;
+  }
 }

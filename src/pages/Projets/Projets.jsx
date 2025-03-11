@@ -10,6 +10,17 @@ function Projets() {
   return (
     <div className="projets-container">
       <h2 className="section-title">Mes réalisations</h2>
+      <p className="projets-intro">
+        Voici une sélection de projets réalisés durant ma formation en
+        développement front-end. Chaque projet m’a permis d'approfondir mes
+        compétences techniques, ma capacité à intégrer des interfaces modernes,
+        responsives et accessibles, et à maîtriser des outils comme Javascript,
+        React et Redux.
+        <br />
+        Cliquez sur une réalisation pour découvrir en détail ce que j'ai appris
+        et mis en œuvre !
+      </p>
+
       <div className="projets-grid">
         {projectsData.map((project, index) => (
           <ProjectCard
@@ -20,7 +31,6 @@ function Projets() {
         ))}
       </div>
 
-      {/* affichage de la modale */}
       {selectedProject && (
         <ProjectModal
           project={selectedProject}

@@ -41,10 +41,10 @@ function Skills() {
       </div>
       <section className="skills-description">
         <h2>
-          Au fil de mes acquisitions, j’ai consolidé mes bases et développé une
-          vraie{" "}
           <strong>
-            maîtrise des outils et bonnes pratiques du développement front-end.
+            Au fil de ma formation, j’ai consolidé mes bases et développé
+            une vraie maîtrise des outils et bonnes pratiques du développement
+            front-end.
           </strong>
         </h2>
         <br></br>
@@ -98,13 +98,12 @@ function Skills() {
         <br></br>
         <h2>
           <p>
-            Je suis capable de{" "}
             <strong>
-              concevoir et développer une application web de A à Z
+              Je suis capable de concevoir et développer une application web de
+              A à Z , en alliant performance, accessibilité et esthétisme.
+              Toujours curieuse d’apprendre, je suis prête à relever de nouveaux
+              défis techniques et créatifs !
             </strong>
-            , en alliant performance, accessibilité et esthétisme. Toujours
-            curieuse d’apprendre, je suis prête à relever de nouveaux défis
-            techniques et créatifs !
           </p>
         </h2>
         <br></br>
