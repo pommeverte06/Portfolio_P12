@@ -71,9 +71,9 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.home-image img:hover {
+/* .home-image img:hover {
   transform: scale(1.02);
-}
+} */
 
 /* tablettes */
 @media screen and (max-width: 1024px) {
