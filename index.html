@@ -1,41 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- Métadonnées essentielles -->
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Portfolio de Stéphanie Paitre, intégratrice web front-end."
+      content="Portfolio de Stéphanie Paitre, intégratrice web spécialisée en Javascript, React et développement front-end."
     />
     <meta name="author" content="Stéphanie Paitre" />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Stéphanie Paitre - Portfolio" />
+
+    <!-- SEO : Référencement et Réseaux sociaux -->
+    <meta
+      property="og:title"
+      content="Stéphanie Paitre - Intégratrice Web Front-End"
+    />
     <meta
       property="og:description"
-      content="Découvrez mon portfolio de d'intégratrice front-end."
+      content="Découvrez mes projets en React, JavaScript et accessibilité web."
     />
-    <meta property="og:image" content="/images/preview.png" />
-    <!-- ajout d'une image de prévisualisation -->
+    <meta
+      property="og:image"
+      content="https://stephanie-paitre.dev/images/preview.png"
+    />
     <meta property="og:url" content="https://stephanie-paitre.dev" />
-    <!-- URL du portfolio -->
+    <meta property="og:type" content="website" />
+
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Stéphanie Paitre - Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Développement web performant et accessible avec React."
+    />
+    <meta
+      name="twitter:image"
+      content="https://stephanie-paitre.dev/images/preview.png"
+    />
 
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <!-- <link rel="icon" type="image/png" href="/favicon.png" /> -->
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://stephanie-paitre.dev" />
 
+    <!-- Balise Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Stéphanie Paitre",
+        "jobTitle": "Intégratrice Web",
+        "url": "https://stephanie-paitre.dev",
+        "sameAs": [
+          "https://github.com/pommeverte06",
+          "https://www.linkedin.com/in/stephanie-paitre/"
+        ]
+      }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link
+      rel="icon"
+      href="/favicon-192x192.png"
+      type="image/png"
+      sizes="192x192"
+    />
+
+    <!-- Préchargement des polices pour améliorer la performance -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@400;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <!-- Icônes FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
 
+    <!-- Meta viewport pour mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stephanie Paitre</title>
+
+    <title>Stéphanie Paitre - Intégratrice Web Front-End</title>
   </head>
   <body>
     <div id="root"></div>
+    <!-- Chargement asynchrone du script principal -->
     <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>

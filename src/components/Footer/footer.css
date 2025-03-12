@@ -3,6 +3,7 @@
   color: var(--color-text);
   text-align: center;
   font-size: 14px;
+  bottom: 0;
 }
 
 .footer-content {
