@@ -41,7 +41,7 @@
     padding: 20px;
   }
   .projets-intro {
-    font-size: 1rem;
+    font-size: 1.2rem;
     max-width: 700px;
     line-height: 1.6;
     color: #ad59ad;
@@ -57,7 +57,7 @@
   }
 
   .projets-intro {
-    font-size: 1rem;
+    font-size: 1.2rem;
     max-width: 500px;
     line-height: 1.6;
     color: #ad59ad;
@@ -74,8 +74,8 @@
   }
 
   .projets-intro {
-    font-size: 1rem;
-    max-width: 300px;
+    font-size: 1.2rem;
+    max-width: 320px;
     line-height: 1.6;
     color: #ad59ad;
   }
