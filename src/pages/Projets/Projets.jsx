@@ -16,9 +16,9 @@ function Projets() {
         compétences techniques, ma capacité à intégrer des interfaces modernes,
         responsives et accessibles, et à maîtriser des outils comme Javascript,
         React et Redux.
-        <br />
-        Cliquez sur une réalisation pour découvrir en détail ce que j'ai appris
-        et mis en œuvre !
+        <br /> <br />
+        <strong>Cliquez sur une réalisation pour découvrir en détail ce que j'ai appris
+        et mis en œuvre !</strong>
       </p>
 
       <div className="projets-grid">

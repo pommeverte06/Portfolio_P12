@@ -91,7 +91,6 @@ function App() {
         </AnimatePresence>
       </div>
 
-      {/* <Footer /> */}
     </>
   );
 }

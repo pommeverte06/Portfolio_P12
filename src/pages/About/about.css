@@ -30,7 +30,9 @@
   margin-bottom: 30px;
   font-size: 1.1rem;
 }
-
+.about-container strong{
+  color: #ad59d4;
+}
 .cv-section {
   margin-top: 30px;
 }

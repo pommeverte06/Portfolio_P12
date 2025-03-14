@@ -16,14 +16,15 @@
 
 .projets-intro {
   font-size: 1.15rem;
-  font-weight: bold;
   max-width: 800px;
   text-align: center;
   margin: 15px auto 30px;
   line-height: 1.6;
-  color: #ad59ad;
 }
-
+.projets-intro strong{
+  color: #ad59d4;
+  font-size: 1.18rem;
+}
 .projets-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -33,7 +34,6 @@
   max-width: 1200px;
 }
 
-/* tablettes */
 @media screen and (max-width: 1024px) {
   .projets-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -44,11 +44,9 @@
     font-size: 1.2rem;
     max-width: 700px;
     line-height: 1.6;
-    color: #ad59ad;
   }
 }
 
-/* mobiles */
 @media screen and (max-width: 768px) {
   .projets-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -60,11 +58,9 @@
     font-size: 1.2rem;
     max-width: 500px;
     line-height: 1.6;
-    color: #ad59ad;
   }
 }
 
-/* petits écrans */
 @media screen and (max-width: 480px) {
   .projets-grid {
     width: 90%;
@@ -77,6 +73,5 @@
     font-size: 1.2rem;
     max-width: 320px;
     line-height: 1.6;
-    color: #ad59ad;
   }
 }

@@ -32,10 +32,10 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <h2 className="contact-title">Discutons de votre projet !</h2>
+      <h2 className="contact-title">Discutons de votre projet</h2>
 
       <p className="contact-subtitle">
-        Transformons vos idées en un projet concret ! <br />
+        Transformons vos idées en un projet concret<br />
         De la conception au développement, je vous aide à créer une expérience
         utilisateur fluide et engageante. <br />
         <br />
@@ -87,7 +87,7 @@ function Contact() {
       </form>
 
       <div className="social-links">
-        <p>Retrouvez-moi aussi sur :</p>
+        <p>Retrouvez-moi aussi sur </p>
         <div className="social-icons">
           <a
             href="https://github.com/pommeverte06"

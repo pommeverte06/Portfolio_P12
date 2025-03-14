@@ -96,7 +96,6 @@
   border: 0;
 }
 
-/* max-width: 1024px */
 @media screen and (max-width: 1024px) {
   .skills-banner {
     animation: scroll-skills 25s linear infinite;
@@ -123,7 +122,6 @@
   }
 }
 
-/* max-width: 768px */
 @media screen and (max-width: 768px) {
   .skills-banner {
     animation: scroll-skills 20s linear infinite;
@@ -157,7 +155,6 @@
   }
 }
 
-/* max-width: 480px */
 @media screen and (max-width: 480px) {
   .skills-banner {
     animation: scroll-skills 15s linear infinite;

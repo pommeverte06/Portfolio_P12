@@ -10,14 +10,13 @@
   margin: 15px 0;
 }
 .contact-subtitle {
-  font-weight: bold;
   font-size: 18px;
   animation: fadeIn 1.2s ease-in-out;
 }
 
 .contact-subtitle strong{
-  color: #ad59ad;
-  font-size: 19px;
+  color: #ad59d4;
+  font-size: 20px;
 }
 @keyframes fadeIn {
   from {
@@ -77,7 +76,7 @@
 
 .input-group input:focus,
 .input-group textarea:focus {
-  border-color: #ad59ad;
+  border-color: #ad59d4;
   box-shadow: 0px 0px 8px rgb(173, 89, 173, 0.4);
 }
 
@@ -164,9 +163,7 @@
   transform: scale(1.1);
 }
 
-/* ======== RESPONSIVE ======== */
 
-/* max-width: 1024px */
 @media (max-width: 1024px) {
   .contact-container {
     padding: 15px;
@@ -189,7 +186,6 @@
   }
 }
 
-/* max-width: 768px */
 @media (max-width: 768px) {
   .contact-container {
     padding: 10px;
@@ -225,7 +221,6 @@
   }
 }
 
-/* max-width: 480px */
 @media (max-width: 480px) {
   .contact-container {
     padding: 5px;

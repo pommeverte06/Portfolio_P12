@@ -7,7 +7,7 @@ import './index.css';
 import App from './App.jsx';
 
 // application du thème stocké dans localStorage dès le chargement
-document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "light");
+document.documentElement.setAttribute("data-theme", localStorage.getItem("theme") || "dark");
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

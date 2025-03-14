@@ -26,7 +26,9 @@ function ProjectModal({ project, onClose }) {
         <img src={project.image} alt={project.title} className="modal-image" />
 
         <div className="modal-text">
-          <p>{project.fullDescription}</p>
+          <div
+            dangerouslySetInnerHTML={{ __html: project.fullDescription }}
+          ></div>
         </div>
 
         <div className="modal-links">

@@ -11,7 +11,7 @@
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  border: 1px solid #ad59ad;
+  border: 1px solid #ad59d4;
 }
 
 .project-card:hover {
@@ -59,7 +59,7 @@
 } 
 .en-savoir-plus {
   font-weight: bold;
-  color: #ad59ad;
+  color: #ad59d4;
   cursor: pointer;
   text-decoration: none;
 }

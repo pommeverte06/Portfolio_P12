@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
-import profilePic from "../../assets/404.webp"; // ne pas oublier de remplacer par ma vraie photo
+import profilePic from "../../assets/accueil.webp"; 
 
 function Home() {
   return (
