@@ -61,7 +61,8 @@
   object-fit: contain;
 }
 .skills-description {
-  max-width: 95%;
+  
+  max-width: 85%;
   margin: 0px auto;
   padding: 20px;
   text-align: center;
@@ -95,6 +96,8 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+
 
 @media screen and (max-width: 1024px) {
   .skills-banner {

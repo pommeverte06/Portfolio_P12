@@ -17,25 +17,43 @@ function Header() {
         <nav className="desktop-nav">
           <ul className="nav-links">
             <li>
-              <Link to="/">Accueil</Link>
+              <Link to="/" aria-label="Aller à l'accueil">
+                Accueil
+              </Link>
             </li>
             <li>
-              <Link to="/portfolio">Réalisations</Link>
+              <Link to="/portfolio" aria-label="Voir mes réalisations">
+                Réalisations
+              </Link>
             </li>
             <li>
-              <Link to="/skills">Compétences</Link>
+              <Link to="/skills" aria-label="Voir mes compétences">
+                Compétences
+              </Link>
             </li>
             <li>
-              <Link to="/about">À propos</Link>
+              <Link to="/about" aria-label="En savoir plus sur moi">
+                À propos
+              </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" aria-label="Me contacter">
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>
 
-        {/* bouton mode clair/sombre en version desktop */}
-        <div className="theme-switch" onClick={toggleTheme}>
+        {/* ✅ Correction : Garder un <div> mais le rendre accessible */}
+        <div
+          className="theme-switch"
+          onClick={toggleTheme}
+          role="button"
+          aria-label="Basculer le mode clair/sombre"
+          aria-pressed={theme === "dark"}
+          tabIndex="0"
+          onKeyDown={(e) => e.key === "Enter" && toggleTheme()}
+        >
           <div className={`slider ${theme === "dark" ? "dark-mode" : ""}`}>
             <i
               className={`fa-solid ${theme === "light" ? "fa-sun" : "fa-moon"}`}
@@ -44,50 +62,81 @@ function Header() {
         </div>
 
         {/* bouton burger */}
-        <button className="hamburger-menu" onClick={toggleMenu}>
+        <button
+          className="hamburger-menu"
+          onClick={toggleMenu}
+          aria-label="Ouvrir le menu"
+          aria-expanded={isOpen}
+        >
           <i className="fa-solid fa-bars"></i>
         </button>
       </div>
 
       {/* tiroir menu mobile */}
       <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
-        <button className="close-menu" onClick={closeMenu}>
+        <button
+          className="close-menu"
+          onClick={closeMenu}
+          aria-label="Fermer le menu"
+        >
           <i className="fa-solid fa-xmark"></i>
         </button>
         <ul className="mobile-nav-links">
           <li>
-            <Link to="/" onClick={closeMenu}>
+            <Link to="/" onClick={closeMenu} aria-label="Aller à l'accueil">
               Accueil
             </Link>
           </li>
           <li>
-            <Link to="/portfolio" onClick={closeMenu}>
+            <Link
+              to="/portfolio"
+              onClick={closeMenu}
+              aria-label="Voir mes réalisations"
+            >
               Réalisations
             </Link>
           </li>
           <li>
-            <Link to="/skills" onClick={closeMenu}>
+            <Link
+              to="/skills"
+              onClick={closeMenu}
+              aria-label="Voir mes compétences"
+            >
               Compétences
             </Link>
           </li>
           <li>
-            <Link to="/about" onClick={closeMenu}>
+            <Link
+              to="/about"
+              onClick={closeMenu}
+              aria-label="En savoir plus sur moi"
+            >
               À propos
             </Link>
           </li>
           <li>
-            <Link to="/contact" onClick={closeMenu}>
+            <Link to="/contact" onClick={closeMenu} aria-label="Me contacter">
               Contact
             </Link>
           </li>
-          {/* bouton mode clair/sombre idem version desktop */}
-          <li className="mobile-theme-switch" onClick={toggleTheme}>
-            <div className={`slider ${theme === "dark" ? "dark-mode" : ""}`}>
-              <i
-                className={`fa-solid ${
-                  theme === "light" ? "fa-sun" : "fa-moon"
-                }`}
-              ></i>
+          {/* ✅ Correction : Garde un <div> mais avec tabIndex="0" pour le clavier */}
+          <li>
+            <div
+              className="mobile-theme-switch"
+              onClick={toggleTheme}
+              role="button"
+              aria-label="Basculer le mode clair/sombre"
+              aria-pressed={theme === "dark"}
+              tabIndex="0"
+              onKeyDown={(e) => e.key === "Enter" && toggleTheme()}
+            >
+              <div className={`slider ${theme === "dark" ? "dark-mode" : ""}`}>
+                <i
+                  className={`fa-solid ${
+                    theme === "light" ? "fa-sun" : "fa-moon"
+                  }`}
+                ></i>
+              </div>
             </div>
           </li>
         </ul>

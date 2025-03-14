@@ -1,3 +1,6 @@
+
+
+
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./contact.css";
@@ -32,7 +35,9 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <h2 className="contact-title">Discutons de votre projet</h2>
+      <h2 className="contact-title" id="contact-title">
+        Discutons de votre projet
+      </h2>
 
       <p className="contact-subtitle">
         Transformons vos idées en un projet concret<br />
@@ -43,47 +48,82 @@ function Contact() {
         <br />
       </p>
 
-      <form onSubmit={sendEmail} className="contact-form">
+      <form
+        onSubmit={sendEmail}
+        className="contact-form"
+        aria-labelledby="contact-title"
+      >
         <div className="input-group">
-          <label>
+          <label htmlFor="from_name">
             <i className="fa-solid fa-user"></i> Nom et prénom
           </label>
           <input
             type="text"
+            id="from_name"
             name="from_name"
             placeholder="Nom et prénom"
             required
+            aria-required="true"
+            aria-describedby="name-description"
           />
+          <span id="name-description" className="sr-only">
+            Veuillez entrer votre nom et prénom.
+          </span>
         </div>
 
         <div className="input-group">
-          <label>
+          <label htmlFor="from_email">
             <i className="fa-solid fa-at"></i> Email
           </label>
           <input
             type="email"
+            id="from_email"
             name="from_email"
             placeholder="Saisissez votre email"
             required
+            aria-required="true"
+            aria-describedby="email-description"
           />
+          <span id="email-description" className="sr-only">
+            Veuillez entrer une adresse email valide.
+          </span>
         </div>
 
         <div className="input-group full-width">
-          <label>
+          <label htmlFor="message">
             <i className="fa-solid fa-comment-dots"></i> Message
           </label>
           <textarea
+            id="message"
             name="message"
             placeholder="Saisissez votre message"
             required
+            aria-required="true"
+            aria-describedby="message-description"
           ></textarea>
+          <span id="message-description" className="sr-only">
+            Veuillez saisir votre message.
+          </span>
         </div>
 
-        <button type="submit" className="contact-button">
+        <button
+          type="submit"
+          className="contact-button"
+          aria-label="Envoyer le message"
+        >
           Envoyer
         </button>
 
-        {message && <p className={messageType}>{message}</p>}
+        {message && (
+          <p
+            className={messageType}
+            role="alert"
+            aria-live="polite"
+            id="form-message"
+          >
+            {message}
+          </p>
+        )}
       </form>
 
       <div className="social-links">
@@ -93,6 +133,7 @@ function Contact() {
             href="https://github.com/pommeverte06"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Voir mon profil GitHub"
           >
             <i className="fa-brands fa-github"></i>
           </a>
@@ -100,6 +141,7 @@ function Contact() {
             href="https://linkedin.com/in/stephanie-paitre/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Voir mon profil LinkedIn"
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>

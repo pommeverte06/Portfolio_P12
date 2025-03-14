@@ -22,3 +22,16 @@ body {
   justify-content: space-between;
   padding-top: 60px;
 }
+ul {
+  list-style-type: square; 
+  padding-left: 20px; 
+}
+
+ul li {
+  color: black; 
+}
+
+ul li::marker {
+  color: #ad59d4; 
+  font-size: 1.2em; 
+}

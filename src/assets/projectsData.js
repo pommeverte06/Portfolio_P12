@@ -3,8 +3,33 @@ import projet2 from "../assets/sophiebluel.webp";
 import projet5 from "../assets/booki.webp";
 import projet7 from "../assets/KASA-home.webp";
 import projet11 from "../assets/argent-bank-home.webp";
+import projet12 from "../assets/portfolio.webp";
 
 const projectsData = [
+  {
+    image: projet12, 
+    title: "Mon Portfolio",
+    shortDescription:
+      "Création de mon portfolio en React avec un design épuré, un mode clair/sombre et une mise en avant de mes réalisations en tant qu'intégratrice web.",
+    fullDescription: `
+      <p>J’ai développé mon <strong>portfolio</strong> avec <strong>React</strong> et <strong>Vite</strong> pour assurer des performances optimales.</p>
+      <ul>
+        <li> Interface moderne avec un <strong>design professionnel</strong>.</li>
+        <li> <strong>Mode clair et sombre</strong> pour une meilleure expérience utilisateur.</li>
+        <li>Navigation fluide avec <strong>React Router</strong>.</li>
+        <li>Formulaire de contact dynamique avec <strong>EmailJS</strong>, permettant d'envoyer des messages directement depuis le site.</li>
+        <li> Gestion d’état optimisée avec <strong>Zustand</strong>.</li>
+      </ul>
+      <p>Optimisations Green Code :</p>
+      <ul>
+        <li> <strong>Images optimisées</strong> pour un chargement rapide.</li>
+        <li> <strong>Code modulaire et réutilisable</strong>.</li>
+      </ul>
+    `,
+    github: "https://github.com/pommeverte06/Portfolio_P12", 
+    live: "https://portfolio-p12-ten.vercel.app//", 
+  },
+
   {
     image: projet11,
     title: "Argent Bank",
@@ -13,14 +38,14 @@ const projectsData = [
     fullDescription: `
       <p>J’ai conçu une <strong>application bancaire</strong> en ligne avec <strong>React</strong> et <strong>Redux</strong>, garantissant une gestion optimisée de l’état global.</p>
       <ul>
-        <li>✔ Se connecter/déconnecter en toute sécurité.</li>
-        <li>✔ Accéder à un tableau de bord personnalisé.</li>
-        <li>✔ Consulter leur profil avec une protection stricte des données.</li>
+        <li> Se connecter/déconnecter en toute sécurité.</li>
+        <li> Accéder à un tableau de bord personnalisé.</li>
+        <li> Consulter leur profil avec une protection stricte des données.</li>
       </ul>
       <p>Optimisations Green Code :</p>
       <ul>
-        <li>✔ <strong>Optimisation des images</strong> pour améliorer la performance.</li>
-        <li>✔ <strong>Modularisation du code</strong> avec des composants réutilisables.</li>
+        <li> <strong>Optimisation des images</strong> pour améliorer la performance.</li>
+        <li> <strong>Modularisation du code</strong> avec des composants réutilisables.</li>
       </ul>
     `,
     github: "https://github.com/pommeverte06/ArgentBank_P10",
@@ -35,14 +60,14 @@ const projectsData = [
     fullDescription: `
       <p>J’ai conçu une <strong>application moderne et interactive</strong> dédiée à la location immobilière.</p>
       <ul>
-        <li>✔ <strong>Carrousel interactif</strong> pour naviguer entre les photos des logements.</li>
-        <li>✔ <strong>Collapsibles dynamiques</strong> pour afficher les détails des propriétés.</li>
-        <li>✔ <strong>Animations CSS</strong> et transitions fluides.</li>
+        <li> <strong>Carrousel interactif</strong> pour naviguer entre les photos des logements.</li>
+        <li> <strong>Collapsibles dynamiques</strong> pour afficher les détails des propriétés.</li>
+        <li> <strong>Animations CSS</strong> et transitions fluides.</li>
       </ul>
       <p>Optimisation du code :</p>
       <ul>
-        <li>✔ Chargement dynamique des données JSON.</li>
-        <li>✔ Architecture modulaire avec composants réutilisables.</li>
+        <li> Chargement dynamique des données JSON.</li>
+        <li> Architecture modulaire avec composants réutilisables.</li>
       </ul>
     `,
     github: "https://github.com/pommeverte06/KASA_P7",
@@ -57,9 +82,9 @@ const projectsData = [
     fullDescription: `
       <p>Transformation d'un site statique en <strong>interface dynamique</strong> avec <strong>JavaScript Vanilla</strong>.</p>
       <ul>
-        <li>✔ <strong>Manipulation avancée du DOM</strong> pour affichage en temps réel.</li>
-        <li>✔ <strong>Gestion des événements utilisateurs</strong> (clics, formulaires).</li>
-        <li>✔ <strong>Développement d’une modale</strong> pour ajouter de nouveaux projets.</li>
+        <li> <strong>Manipulation avancée du DOM</strong> pour affichage en temps réel.</li>
+        <li> <strong>Gestion des événements utilisateurs</strong> (clics, formulaires).</li>
+        <li> <strong>Développement d’une modale</strong> pour ajouter de nouveaux projets.</li>
       </ul>
     `,
     github: "https://github.com/pommeverte06/S0phieBluel_P6",
@@ -73,9 +98,9 @@ const projectsData = [
     fullDescription: `
       <p>Développement en approche <strong>mobile-first</strong> avec une structuration <strong>modulaire</strong> des styles.</p>
       <ul>
-        <li>✔ <strong>Animations CSS avancées</strong> pour transitions fluides.</li>
-        <li>✔ <strong>Effets dynamiques</strong> sur boutons et interactions.</li>
-        <li>✔ <strong>Utilisation de Sass</strong> (variables, mixins, partials).</li>
+        <li> <strong>Animations CSS avancées</strong> pour transitions fluides.</li>
+        <li> <strong>Effets dynamiques</strong> sur boutons et interactions.</li>
+        <li> <strong>Utilisation de Sass</strong> (variables, mixins, partials).</li>
       </ul>
     `,
     github: "https://github.com/pommeverte06/ohMyFood_P4",
@@ -90,9 +115,9 @@ const projectsData = [
     fullDescription: `
       <p>Développement d’un site <strong>responsive</strong> en respectant les maquettes Figma.</p>
       <ul>
-        <li>✔ <strong>Structuration optimisée</strong> du HTML & CSS.</li>
-        <li>✔ <strong>Media Queries</strong> pour adaptation aux différents écrans.</li>
-        <li>✔ <strong>Flexbox & Grid</strong> pour une mise en page harmonieuse.</li>
+        <li> <strong>Structuration optimisée</strong> du HTML & CSS.</li>
+        <li> <strong>Media Queries</strong> pour adaptation aux différents écrans.</li>
+        <li> <strong>Flexbox & Grid</strong> pour une mise en page harmonieuse.</li>
       </ul>
     `,
     github: "https://github.com/pommeverte06/Projet3_Booki",

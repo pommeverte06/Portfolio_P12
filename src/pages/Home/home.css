@@ -3,9 +3,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 50px;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: auto;
   margin-bottom: 160px;
+  gap: 50px;
 }
 
 .home-content {

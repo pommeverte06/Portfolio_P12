@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./home.css";
-import profilePic from "../../assets/accueil.webp"; 
+import profilePic from "../../assets/accueil.webp";
 
 function Home() {
   return (
-    <div className="home-container">
-      <div className="home-content">
+    <main className="home-container" role="main">
+      <section className="home-content">
         <h1>Intégratrice web</h1>
         <p>
           Je conçois des interfaces web modernes, responsives et accessibles,
@@ -17,19 +17,34 @@ function Home() {
           tous les supports, adapté à vos besoins.
         </p>
         <div className="cta-buttons">
-          <Link to="/portfolio" className="btn-primary">
+          <Link
+            to="/portfolio"
+            className="btn-primary"
+            aria-label="Voir mon portfolio contenant mes réalisations en développement web"
+          >
             Voir mes réalisations
           </Link>
-          <Link to="/contact" className="btn-secondary">
+          <Link
+            to="/contact"
+            className="btn-secondary"
+            aria-label="Accéder à la page contact pour me joindre"
+          >
             Me contacter
           </Link>
         </div>
-      </div>
+      </section>
 
-      <div className="home-image">
-        <img src={profilePic} alt="Stéphanie Paitre, intégratrice web" />
-      </div>
-    </div>
+      <figure className="home-image">
+        <img
+          src={profilePic}
+          alt="illustration d'un environnement de travail"
+        />
+        <figcaption className="sr-only">
+          Stéphanie Paitre, intégratrice web spécialisée en accessibilité et
+          performance.
+        </figcaption>
+      </figure>
+    </main>
   );
 }
 
