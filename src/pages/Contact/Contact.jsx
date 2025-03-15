@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./contact.css";
@@ -40,7 +37,8 @@ function Contact() {
       </h2>
 
       <p className="contact-subtitle">
-        Transformons vos idées en un projet concret<br />
+        Transformons vos idées en un projet concret
+        <br />
         De la conception au développement, je vous aide à créer une expérience
         utilisateur fluide et engageante. <br />
         <br />
