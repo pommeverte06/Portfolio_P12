@@ -1,44 +1,91 @@
 .not-found-container {
-  text-align: center;
-  padding: 45px;
-  background-color: rgb(127, 230, 248);
-  animation: fadeIn 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #a4e6f4;
 }
 
 .not-found-image {
   max-width: 40%;
   height: auto;
-  margin-bottom: 10px;
   border-radius: 50%;
-  animation: zoomInOut 3s infinite ease-in-out alternate;
-  transition: transform 0.3s ease-in-out;
+  margin-bottom: 60px;
 
-  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
-.not-found-image:hover {
-  animation: shake 0.5s ease-in-out;
+.not-found-content {
+  max-width: 50%;
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 60px;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.not-found-content h2 {
+  color: black;
+}
+.not-found-content p {
+  color: black;
 }
 
-@keyframes zoomInOut {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.05);
-  }
+.not-found-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  align-items: center;
 }
 
+.btn-404 {
+  text-decoration: none;
+  background-color: #ad59d4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
+.btn-404:hover {
+  background-color: #ebe9e9;
+}
+
+/* Responsive pour petits écrans */
+@media (max-width: 768px) {
+  .not-found-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .not-found-image {
+    max-width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .not-found-content {
+    max-width: 90%;
+    padding: 0;
+  }
+  .not-found-content h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .not-found-content p {
+    text-align: center;
+  }
+  .not-found-links {
+    flex-direction: column;
+  }
+}
