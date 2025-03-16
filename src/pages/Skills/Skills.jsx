@@ -48,6 +48,7 @@ function Skills() {
           </strong>
         </h2>
         <br></br>
+        <div className="skills-description-block">
         <article>
           <h2>HTML, CSS & Sass</h2>{" "}
           <p>
@@ -95,6 +96,7 @@ function Skills() {
             pratiques pour un développement web plus <strong>durable.</strong>
           </p>
         </article>{" "}
+        </div>
         <br></br>
         <h2>
           <p>
