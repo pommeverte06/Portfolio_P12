@@ -28,7 +28,7 @@
 }
 
 .project-content {
-  flex-grow: 1; 
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,14 +49,14 @@
 
 .project-link {
   text-align: center;
-  margin-top: auto; 
+  margin-top: auto;
   padding-bottom: 10px;
 }
-.project-icons a{
+.project-icons a {
   margin: 10px;
   font-size: 21px;
   font-size: 1.5rem;
-} 
+}
 .en-savoir-plus {
   font-weight: bold;
   color: #ad59d4;
@@ -64,4 +64,8 @@
   text-decoration: none;
 }
 
-
+@media (max-width: 480px) {
+  .project-content p {
+    font-size: 1rem;
+  }
+}

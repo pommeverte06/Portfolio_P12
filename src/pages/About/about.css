@@ -38,7 +38,6 @@
   margin-top: 30px;
 }
 
-/* tablette */
 @media screen and (max-width: 1024px) {
   .about-container {
     padding: 40px 15px;
@@ -50,7 +49,6 @@
   }
 }
 
-/* smartphone */
 @media screen and (max-width: 768px) {
   .about-container {
     padding: 30px 10px;
@@ -58,11 +56,10 @@
   }
 
   .about-container h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
-/* petits écrans */
 @media screen and (max-width: 480px) {
   .about-container {
     padding: 25px 5px;
@@ -71,6 +68,6 @@
   }
 
   .about-container h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }

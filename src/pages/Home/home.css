@@ -86,7 +86,7 @@
   }
 
   .home-image img {
-    width: 50%;
+    width: 100%;
   }
 
   .cta-buttons {
@@ -98,6 +98,8 @@
 @media screen and (max-width: 600px) {
   .home-container {
     padding: 30px;
+    margin: 20px 10px;
+
   }
 
   .home-content h1 {
@@ -121,10 +123,10 @@
 
 @media screen and (max-width: 480px) {
   .home-container {
-    padding: 20px;
-    margin: 50px;
+    padding: 10px;
+    margin: 20px 10px;
+    gap: 0px;
   }
-
   .home-content h1 {
     font-size: 1.8rem;
   }
@@ -142,7 +144,8 @@
     margin: 5px 0;
   }
 
-  .home-image img {
+  .home-image  {
     width: 100%;
+    margin: 0;
   }
 }

@@ -32,13 +32,13 @@ function Contact() {
 
   return (
     <div className="contact-container">
-      <h2 className="contact-title" id="contact-title">
+      <h1 className="contact-title" id="contact-title">
         Discutons de votre projet
-      </h2>
+      </h1>
 
       <p className="contact-subtitle">
         Transformons vos idées en un projet concret
-        <br />
+        <br /><br />
         De la conception au développement, je vous aide à créer une expérience
         utilisateur fluide et engageante. <br />
         <br />

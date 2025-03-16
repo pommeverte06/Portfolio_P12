@@ -44,7 +44,6 @@ function Header() {
           </ul>
         </nav>
 
-        {/* ✅ Correction : Garder un <div> mais le rendre accessible */}
         <div
           className="theme-switch"
           onClick={toggleTheme}
@@ -119,7 +118,6 @@ function Header() {
               Contact
             </Link>
           </li>
-          {/* ✅ Correction : Garde un <div> mais avec tabIndex="0" pour le clavier */}
           <li>
             <div
               className="mobile-theme-switch"

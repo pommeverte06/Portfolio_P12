@@ -176,7 +176,7 @@
   }
 
   .contact-title {
-    font-size: 26px;
+    font-size: 2rem;
   }
 
   .input-group input,
@@ -200,7 +200,7 @@
   }
 
   .contact-title {
-    font-size: 24px;
+    font-size: 2rem;
   }
   .contact-subtitle {
     width: 85%;
@@ -233,13 +233,16 @@
   }
 
   .contact-title {
-    font-size: 22px;
+    font-size: 2rem;
   }
 
   .contact-subtitle {
     width: 85%;
+    font-size: 1.1rem;
   }
-
+.contact-subtitle strong{
+  font-size: 1.4rem;
+}
   .input-group input,
   .input-group textarea .input-group label {
     font-size: 13px;
@@ -247,7 +250,7 @@
   }
 
   .contact-button {
-    font-size: 13px;
+    font-size: 1rem;
     padding: 8px;
   }
 }
